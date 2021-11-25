@@ -5,11 +5,11 @@ addr = 0x8
 bus = SMBus(1)
 
 app = Flask(__name__)
-\
+
 @app.route('/')
 def index():
 	return render_template('ws.html')
-\
+
 @app.route('/on-link/')
 def on_link():
  	print ('On selected')
